@@ -10,37 +10,40 @@ import Experience from "./components/Expericence";
 import Footer from "./components/Footer";
 import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./components/Contact";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        <Routes>
-          <Route path="/project/:id" element={<ProjectDetail />} />
-          <Route
-            path="/"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Header />
-                <main>
-                  <Hero />
-                  <About />
-                  <Skills />
-                  <Projects />
-                  <Experience />
-                  <Contact />
-                </main>
-                <Footer />
-              </motion.div>
-            }
-          />
-        </Routes>
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+          <Routes>
+            <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route
+              path="/"
+              element={
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Header />
+                  <main>
+                    <Hero />
+                    <About />
+                    <Skills />
+                    <Projects />
+                    <Experience />
+                    <Contact />
+                  </main>
+                  <Footer />
+                </motion.div>
+              }
+            />
+          </Routes>
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

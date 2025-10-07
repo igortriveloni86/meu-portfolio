@@ -10,15 +10,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "Catálago de Filmes",
       description:
-        "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque.",
-      image:
-        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "Este projeto é um mini catálogo de filmes onde o usuário pode pesquisar pelo nome de um filme e visualizar pôster, título e ano de lançamento em cards estilizados.",
+      image: "./src/img/projeto1.png",
       category: "fullstack",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      technologies: ["Php", "JavaScript", "Bootstrap", "HTML5"],
+      github: "https://github.com/igortriveloni86/PHP_API_FILMES",
+      demo: "#",
     },
   ];
 
@@ -138,14 +137,14 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <motion.button
+                {/* <motion.button
                   onClick={() => navigate(`/project/${project.id}`)}
                   className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors group"
                   whileHover={{ x: 5 }}
                 >
                   <Eye size={16} />
                   <span>Ver detalhes</span>
-                </motion.button>
+                </motion.button> */}
               </div>
             </motion.div>
           ))}

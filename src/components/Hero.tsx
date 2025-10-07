@@ -22,6 +22,27 @@ const Hero = () => {
     document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Partículas flutuantes
+  const particles = Array.from({ length: 20 }, (_, i) => (
+    <motion.div
+      key={i}
+      className="absolute w-1 h-1 bg-purple-400/30 rounded-full"
+      initial={{
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+      }}
+      animate={{
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+      }}
+      transition={{
+        duration: Math.random() * 10 + 10,
+        repeat: Infinity,
+        repeatType: "reverse",
+      }}
+    />
+  ));
+
   return (
     <section
       id="hero"
@@ -29,8 +50,32 @@ const Hero = () => {
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        {particles}
+        <motion.div
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            opacity: [0.5, 0.3, 0.5],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+        />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">

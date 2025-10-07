@@ -28,15 +28,15 @@ const Contact = () => {
     setIsSubmitting(true);
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_2vcpn3o",
+        "template_avswhck",
         {
           from_name: data.name,
           from_email: data.email,
           subject: data.subject,
           message: data.message,
         },
-        "YOUR_PUBLIC_KEY"
+        "l2Y50teSRfpvBi2Mi"
       );
       setSubmitStatus("success");
       reset();
