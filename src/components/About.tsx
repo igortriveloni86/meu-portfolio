@@ -36,7 +36,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-600 rounded-2xl blur-xl opacity-30"></div>
               <img
-                src="./src/img/img.jpg"
+                src="public/images/img.jpg"
                 alt="Perfil"
                 className="relative w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
