@@ -15,8 +15,19 @@ const Projects = () => {
         "Este projeto é um mini catálogo de filmes onde o usuário pode pesquisar pelo nome de um filme e visualizar pôster, título e ano de lançamento em cards estilizados.",
       image: "./src/img/projeto1.png",
       category: "fullstack",
-      technologies: ["Php", "JavaScript", "Bootstrap", "HTML5"],
+      technologies: ["PHP", "JavaScript", "Bootstrap", "HTML5"],
       github: "https://github.com/igortriveloni86/PHP_API_FILMES",
+      demo: "#",
+    },
+    {
+      id: 2,
+      title: "Jogo da Cobrinha",
+      description:
+        "Um simples jogo da cobrinha. Inclui botões de Iniciar, Pausar e Reiniciar o jogo.",
+      image: "./src/img/projeto2.png",
+      category: "fullstack",
+      technologies: ["JavaScript (ES6)", "CSS3", "HTML5 Canvas"],
+      github: "https://github.com/igortriveloni86/projeto_snake",
       demo: "#",
     },
   ];
