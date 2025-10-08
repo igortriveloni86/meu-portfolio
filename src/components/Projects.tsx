@@ -28,6 +28,16 @@ const Projects = () => {
       github: "https://github.com/igortriveloni86/projeto_snake",
       demo: "#",
     },
+    {
+      id: 3,
+      title: "Em breve",
+      description: "Em breve, mais projetos incríveis.",
+      image: "images/em_desenvolvimento.jpg",
+      category: "fullstack",
+      technologies: ["N/A"],
+      github: "#",
+      demo: "#",
+    },
   ];
 
   const categories = [
