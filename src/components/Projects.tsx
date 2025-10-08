@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Eye } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
-  const navigate = useNavigate();
   const [filter, setFilter] = useState("all");
 
   const projects = [
@@ -147,15 +145,6 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* <motion.button
-                  onClick={() => navigate(`/project/${project.id}`)}
-                  className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors group"
-                  whileHover={{ x: 5 }}
-                >
-                  <Eye size={16} />
-                  <span>Ver detalhes</span>
-                </motion.button> */}
               </div>
             </motion.div>
           ))}

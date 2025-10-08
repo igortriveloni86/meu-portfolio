@@ -32,7 +32,7 @@ const Header = () => {
   const downloadCV = () => {
     // Simular download do CV
     const link = document.createElement("a");
-    link.href = "./src/cv/Curriculo_Igor_Triveloni.pdf"; // Substitua pelo caminho real do seu CV
+    link.href = "cv/Curriculo_Igor_Triveloni.pdf"; // Substitua pelo caminho real do seu CV
     link.download = "Curriculo_Igor_Triveloni.pdf";
     document.body.appendChild(link);
     link.click();

@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Expericence";
 import Footer from "./components/Footer";
-import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./components/Contact";
 import { HelmetProvider } from "react-helmet-async";
 
@@ -18,7 +17,6 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
           <Routes>
-            <Route path="/project/:id" element={<ProjectDetail />} />
             <Route
               path="/"
               element={
