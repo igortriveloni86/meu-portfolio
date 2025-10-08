@@ -59,18 +59,6 @@ const About = () => {
               Especializado em criar soluções completas, desde aplicações web
               até arquiteturas de nuvem escaláveis.
             </p>
-            <p className="text-gray-300 leading-relaxed">
-              Experiência em aplicações web, APIs REST, PHP, Laravel, Vue.js,
-              React.JS, Node.JS, Docker e CI/CD. Atuação em migração de sistemas
-              para AWS e Google Cloud, administração de servidores Windows/Linux
-              (AD, DNS, IIS, WSUS, GPOs), automação com PowerShell/Bash.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Perfil colaborativo com foco em resultados, performance e melhoria
-              contínua. Experiência em monitoramento com Zabbix e segurança com
-              pfSense, sempre buscando otimizar processos e entregar soluções
-              robustas.
-            </p>
 
             <div className="grid grid-cols-2 gap-6 mt-8">
               {stats.map((stat, index) => (
