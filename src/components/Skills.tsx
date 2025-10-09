@@ -37,6 +37,11 @@ const Skills = () => {
           color: "text-purple-400",
         },
         {
+          name: "React.js",
+          icon: <Code2 className="w-8 h-8" />, //
+          color: "text-purple-400",
+        },
+        {
           name: "Laravel",
           icon: <Globe className="w-8 h-8" />,
           color: "text-red-400",
