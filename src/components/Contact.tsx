@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  MessageCircleDashed as MessageCircle,
-  Video,
-} from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Video } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -44,7 +38,7 @@ const Contact = () => {
       icon: Video,
       label: "Agendar Reunião",
       href: "https://calendar.app.google/u13VNJYLfXj7CqQm9",
-      color: "from-purple-500 to-pink-600",
+      color: "from-cyan-500 to-emerald-600",
     },
   ];
 
@@ -59,9 +53,9 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Vamos <span className="text-purple-400">Conversar</span>
+            Vamos <span className="text-cyan-400">Conversar</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-3xl mx-auto text-lg">
             Estou sempre aberto a novas oportunidades e colaborações.
           </p>
@@ -87,16 +81,14 @@ const Contact = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10 h-full">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <info.icon className="w-8 h-8 text-purple-400" />
+                <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 h-full">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cyan-600/20 to-emerald-600/20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <info.icon className="w-8 h-8 text-cyan-400" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
                     {info.label}
                   </h3>
-                  <p className="text-purple-400 font-medium mb-2">
-                    {info.value}
-                  </p>
+                  <p className="text-cyan-400 font-medium mb-2">{info.value}</p>
                   <p className="text-gray-400 text-sm">{info.description}</p>
                 </div>
               </motion.a>

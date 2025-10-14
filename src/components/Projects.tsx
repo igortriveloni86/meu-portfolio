@@ -63,9 +63,9 @@ const Projects = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Meus <span className="text-purple-400">Projetos</span>
+            Meus <span className="text-cyan-400">Projetos</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Uma seleção dos meus trabalhos mais recentes.
           </p>
@@ -85,7 +85,7 @@ const Projects = () => {
               onClick={() => setFilter(category.id)}
               className={`px-6 py-2 rounded-full transition-all duration-300 ${
                 filter === category.id
-                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white"
+                  ? "bg-gradient-to-r from-cyan-600 to-emerald-600 text-white"
                   : "bg-slate-800 text-gray-300 hover:bg-slate-700"
               }`}
             >
@@ -99,7 +99,7 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="bg-slate-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300"
+              className="bg-slate-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -118,7 +118,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-slate-800/80 rounded-full text-white hover:bg-purple-600 transition-colors"
+                    className="p-2 bg-slate-800/80 rounded-full text-white hover:bg-cyan-600 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -128,7 +128,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-slate-800/80 rounded-full text-white hover:bg-purple-600 transition-colors"
+                    className="p-2 bg-slate-800/80 rounded-full text-white hover:bg-emerald-600 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -149,7 +149,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm"
+                      className="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm"
                     >
                       {tech}
                     </span>

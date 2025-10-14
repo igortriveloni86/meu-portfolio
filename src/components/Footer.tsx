@@ -50,7 +50,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <Code2 className="h-8 w-8 text-purple-400" />
+              <Code2 className="h-8 w-8 text-cyan-400" />
               <span className="text-xl font-bold text-white">
                 Igor Triveloni
               </span>
@@ -66,7 +66,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 bg-slate-800 rounded-lg text-gray-400 hover:text-white hover:bg-purple-600 transition-all duration-300"
+                  className="p-2 bg-slate-800 rounded-lg text-gray-400 hover:text-white hover:bg-cyan-600 transition-all duration-300"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-400 hover:text-purple-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.label}
                   </button>
@@ -134,7 +134,7 @@ const Footer = () => {
           {/* Back to Top Button */}
           <motion.button
             onClick={scrollToTop}
-            className="flex items-center space-x-2 text-gray-400 hover:text-purple-400 transition-colors duration-200"
+            className="flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors duration-200"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
           >

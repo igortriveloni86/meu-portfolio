@@ -21,9 +21,9 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Sobre <span className="text-purple-400">Mim</span>
+            Sobre <span className="text-cyan-400">Mim</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-500 mx-auto"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -34,7 +34,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-600 rounded-2xl blur-xl opacity-30"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-emerald-500 rounded-2xl blur-xl opacity-30"></div>
               <img
                 src="images/img.jpg"
                 alt="Perfil"
@@ -71,7 +71,7 @@ const About = () => {
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <stat.icon className="w-8 h-8 text-purple-400 mx-auto mb-2" />
+                  <stat.icon className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                   <div className="text-2xl font-bold text-white">
                     {stat.value}
                   </div>

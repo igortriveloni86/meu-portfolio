@@ -56,7 +56,7 @@ const Header = () => {
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            <Code2 className="h-8 w-8 text-purple-400" />
+            <Code2 className="h-8 w-8 text-cyan-400" />
             <span className="text-xl font-bold text-white">Igor Triveloni</span>
           </motion.div>
 
@@ -66,7 +66,7 @@ const Header = () => {
               <motion.button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-200"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -75,7 +75,7 @@ const Header = () => {
             ))}
             <motion.button
               onClick={downloadCV}
-              className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 group"
+              className="flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-emerald-600 text-white px-4 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -105,7 +105,7 @@ const Header = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                className="block w-full text-left py-2 text-gray-300 hover:text-cyan-400 transition-colors duration-200"
               >
                 {item.label}
               </button>

@@ -110,9 +110,9 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Minha <span className="text-purple-400">Experiência</span>
+            Minha <span className="text-cyan-400">Experiência</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Minha jornada profissional e as conquistas que moldaram minha
             carreira
@@ -130,11 +130,11 @@ const Experience = () => {
               viewport={{ once: true }}
             >
               {/* Timeline Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-px bg-gradient-to-b from-purple-400 to-pink-600 h-full"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-px bg-gradient-to-b from-cyan-400 to-emerald-500 h-full"></div>
 
               {/* Timeline Dot */}
               <motion.div
-                className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full border-4 border-slate-900 z-10"
+                className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-cyan-400 to-emerald-500 rounded-full border-4 border-slate-900 z-10"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
@@ -154,7 +154,7 @@ const Experience = () => {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="flex items-center space-x-2 text-purple-400 mb-2">
+                  <div className="flex items-center space-x-2 text-cyan-400 mb-2">
                     <Calendar size={16} />
                     <span className="text-sm font-medium">{exp.period}</span>
                   </div>
@@ -196,7 +196,7 @@ const Experience = () => {
                           key={i}
                           className="text-gray-300 text-sm flex items-start"
                         >
-                          <span className="text-purple-400 mr-2">•</span>
+                          <span className="text-cyan-400 mr-2">•</span>
                           {achievement}
                         </li>
                       ))}
@@ -207,7 +207,7 @@ const Experience = () => {
                     {exp.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs"
+                        className="px-2 py-1 bg-cyan-600/20 text-cyan-300 rounded text-xs"
                       >
                         {tech}
                       </span>

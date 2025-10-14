@@ -34,12 +34,12 @@ const Skills = () => {
         {
           name: "PHP",
           icon: <FileCode className="w-8 h-8" />,
-          color: "text-purple-400",
+          color: "text-blue-400",
         },
         {
           name: "React.js",
           icon: <Code2 className="w-8 h-8" />, //
-          color: "text-purple-400",
+          color: "text-cyan-400",
         },
         {
           name: "Laravel",
@@ -103,7 +103,7 @@ const Skills = () => {
     {
       title: "DevOps & Automação",
       icon: <Settings className="w-8 h-8" />,
-      color: "from-purple-500 to-pink-500",
+      color: "from-cyan-500 to-blue-500",
       skills: [
         {
           name: "Docker",
@@ -179,7 +179,7 @@ const Skills = () => {
     {
       title: "Monitoramento & Segurança",
       icon: <Shield className="w-8 h-8" />,
-      color: "from-red-500 to-pink-500",
+      color: "from-red-500 to-orange-500",
       skills: [
         {
           name: "Zabbix",
@@ -196,7 +196,7 @@ const Skills = () => {
     {
       title: "Metodologias Ágeis",
       icon: <Users className="w-8 h-8" />,
-      color: "from-indigo-500 to-purple-500",
+      color: "from-indigo-500 to-blue-500",
       skills: [
         {
           name: "Scrum Master",
@@ -238,9 +238,9 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Minhas <span className="text-purple-400">Habilidades</span>
+            Minhas <span className="text-cyan-400">Habilidades</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Tecnologias e ferramentas que domino para criar soluções completas e
             eficientes
@@ -251,7 +251,7 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
-              className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+              className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}

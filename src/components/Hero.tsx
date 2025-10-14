@@ -26,7 +26,7 @@ const Hero = () => {
   const particles = Array.from({ length: 20 }, (_, i) => (
     <motion.div
       key={i}
-      className="absolute w-1 h-1 bg-purple-400/30 rounded-full"
+      className="absolute w-1 h-1 bg-cyan-400/30 rounded-full"
       initial={{
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         {particles}
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -91,7 +91,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Olá, eu sou
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 h-24">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-500 h-24">
               Igor Triveloni
             </span>
           </motion.h1>
@@ -124,7 +124,7 @@ const Hero = () => {
           >
             <motion.button
               onClick={scrollToAbout}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
+              className="bg-gradient-to-r from-cyan-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
