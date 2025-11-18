@@ -23,19 +23,20 @@ const Projects = () => {
       description:
         "Um simples jogo da cobrinha. Inclui botões de Iniciar, Pausar e Reiniciar o jogo.",
       image: "images/projeto2.png",
-      category: "fullstack",
-      technologies: ["JavaScript (ES6)", "CSS3", "HTML5 Canvas"],
+      category: "frontend",
+      technologies: ["JavaScript (ES6)", "CSS3", "HTML5"],
       github: "https://github.com/igortriveloni86/projeto_snake",
       demo: "#",
     },
     {
       id: 3,
-      title: "Em breve",
-      description: "Em breve, mais projetos incríveis.",
-      image: "images/em_desenvolvimento.jpg",
-      category: "fullstack",
-      technologies: ["N/A"],
-      github: "#",
+      title: "Chronos Pomodoro",
+      description:
+        "Aplicativo Pomodoro simples, focado em gerenciar ciclos de trabalho/pausa, histórico de tarefas e notificações sonoras.",
+      image: "images/pomodoro.png",
+      category: "frontend",
+      technologies: ["React", "TypeScript", "Vite"],
+      github: "https://github.com/igortriveloni86/chronos-pomodoro",
       demo: "#",
     },
   ];
