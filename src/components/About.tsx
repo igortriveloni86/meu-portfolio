@@ -54,10 +54,10 @@ const About = () => {
               Desenvolvedor Full Stack & Analista em Infraestrutura
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Profissional com mais de 7 anos em desenvolvimento Fullstack e 2+
-              anos em Infraestrutura de TI, DevOps e Cloud Computing.
-              Especializado em criar soluções completas, desde aplicações web
-              até arquiteturas de nuvem escaláveis.
+              Profissional com 7+ anos em desenvolvimento Full Stack e 2+ anos
+              em Infraestrutura de TI. Especializado em criar soluções
+              completas, desde aplicações web até arquiteturas de nuvem
+              escaláveis.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-8">

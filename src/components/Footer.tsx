@@ -17,12 +17,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/igortriveloni86",
+      href: "https://github.com/igortriveloni86/",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/igor-triveloni",
+      href: "https://linkedin.com/in/igor-triveloni/",
       label: "LinkedIn",
     },
     {

@@ -94,7 +94,7 @@ const Skills = () => {
           color: "text-red-500",
         },
         {
-          name: "MariaDB",
+          name: "PostgreSQL",
           icon: <Database className="w-8 h-8" />,
           color: "text-blue-500",
         },
@@ -117,6 +117,11 @@ const Skills = () => {
         },
         {
           name: "GitHub",
+          icon: <GitBranch className="w-8 h-8" />,
+          color: "text-orange-500",
+        },
+        {
+          name: "GitLab",
           icon: <GitBranch className="w-8 h-8" />,
           color: "text-orange-500",
         },
@@ -157,6 +162,11 @@ const Skills = () => {
           icon: <Terminal className="w-8 h-8" />,
           color: "text-yellow-500",
         },
+        {
+          name: "Active Directory",
+          icon: <Terminal className="w-8 h-8" />,
+          color: "text-red-500",
+        },
       ],
     },
     {
@@ -190,6 +200,12 @@ const Skills = () => {
           name: "pfSense",
           icon: <Lock className="w-8 h-8" />,
           color: "text-blue-500",
+        },
+
+        {
+          name: "Firewall",
+          icon: <Lock className="w-8 h-8" />,
+          color: "text-orange-500",
         },
       ],
     },
